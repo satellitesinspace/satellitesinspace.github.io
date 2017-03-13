@@ -1,0 +1,280 @@
+body {
+    background: #001d5f;
+    overflow-x: hidden;
+ }
+
+@font-face {
+    font-family: "Inconsolata";
+    src: url(../fonts/Inconsolata.otf);
+}
+
+@font-face {
+    font-family: "Kaiso";
+    src: url(../fonts/Kaiso.otf);
+}
+
+
+/* Toggle Styles */
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 150px;
+    width: 0px;
+    height: 100%;
+    margin-left: -150px;
+    overflow-y: auto;
+    background: #001d5f;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 150px;
+}
+
+#page-content-wrapper {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/*
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: 150px;
+} */
+
+/* Sidebar Styles */
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 150px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-family: "Inconsolata";
+}
+
+.sidebar-nav li {
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    margin: 76px 0px 40px 0px
+}
+
+/* dont look here */
+
+#wrapper {
+        padding-left: 150px;
+}
+
+#wrapper.toggled {
+        padding-left: 0;
+}
+
+#sidebar-wrapper {
+        width: 150px;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+        width: 0;
+}
+
+#page-content-wrapper {
+        position: relative;
+}
+
+#wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+}
+
+
+
+/* page specific -- main */
+
+
+#mneme {
+    margin-top: 300px;
+    font-family: "Kaiso";
+    font-size: 24px;
+    text-align: center;
+}
+
+#mneme p {
+    color: #fff;
+}
+
+#cassini {
+    text-indent: 250px;
+    
+}
+
+/* page specific -- abt */
+
+#abt {
+    padding: 50px 0px 50px 200px;
+    background: #f2f2f2;
+}
+
+#abt h1 {
+    font-family: "Kaiso";
+    font-size: 50px;
+    color: #001d5f;
+}
+
+#abt h2, h3, h4, h5 {
+    font-family: "Inconsolata";
+    color: #001d5f;
+}
+
+#music {
+    margin-top: 70px;
+}
+
+#music p {
+    font-family: "Inconsolata";
+    color: #001d5f;
+    font-size: 24px;   
+}
+
+#music ul {
+    text-align: center;
+    margin-right: 200px;
+    padding: 40px;
+    background: #eae9e9;
+}
+
+#music li {
+    display: inline-block
+}
+
+#music img {
+    margin: 10px;
+    margin-right: 30px;
+}
+
+#games {
+    margin-top: 70px;
+}
+
+#games p {
+    font-family: "Inconsolata";
+    color: #001d5f;
+    font-size: 24px; 
+}
+
+#games ul {
+    text-align: center;
+    margin-right: 200px;
+    padding: 40px;
+    background: #eae9e9;
+}
+
+#games li {
+    display: inline-block
+}
+
+#games img {
+    margin: 10px;
+    margin-right: 30px;
+}
+
+#reading {
+    margin-top: 70px;
+}
+
+#reading p {
+    font-family: "Inconsolata";
+    color: #001d5f;
+    font-size: 24px; 
+}
+#reading ul {
+    text-align: center;
+    margin-right: 200px;
+    padding: 40px;
+    background: #eae9e9;
+}
+
+#reading li {
+    display: inline-block
+}
+
+#reading img {
+    margin: 10px;
+    margin-right: 30px;
+}
+
+/* wrk */
+
+#wrk {
+    padding: 100px 0px 50px 200px;
+    background: #f2f2f2;
+}
+
+#wrk h2,p {
+    margin-right: 200px;
+    font-family: "Inconsolata";
+    color: #001d5f;
+}
+
+#wrk p {
+    font-size: 18px;
+    text-indent: 62px;
+}
+
+#wrk-img-wrap {
+    background: #eae9e9;
+    margin: 60px 40px 70px 60px;
+    margin-right: 250px;
+}
+
+#wrk-img img {
+    padding: 20px;
+}
+
+/* rsm */
+
+#rsm {
+    padding-top: 200px;
+    padding-left: 200px;
+    background: #f2f2f2;
+    height: 999px;
+    overflow: hidden;
+}
+
+#rsm p {
+    font-size: 24px;   
+}
+
+#rsm-img img {
+    position: fixed;
+    margin-top: -450px;
+    margin-left: 500px;
+}
